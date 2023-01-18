@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_date_tanggal_sewas",
+  "info": {
+    "displayName": "Tanggal_sewa",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tanggal_sewa": {
+      "type": "date",
+      "required": false
+    },
+    "keterangan": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategoris",
+  "info": {
+    "singularName": "kategori",
+    "pluralName": "kategoris",
+    "displayName": "kategori",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nama": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "deskripsi": {
+      "type": "text",
+      "required": true
+    },
+    "kangfotos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kangfoto.kangfoto",
+      "mappedBy": "kategoris"
+    },
+    "foto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

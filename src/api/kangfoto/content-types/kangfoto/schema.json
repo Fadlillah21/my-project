@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kangfotos",
+  "info": {
+    "singularName": "kangfoto",
+    "pluralName": "kangfotos",
+    "displayName": "Kangfoto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true,
+      "default": "deskrpsi"
+    },
+    "telp": {
+      "type": "biginteger",
+      "required": true
+    },
+    "kategoris": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kategori.kategori",
+      "inversedBy": "kangfotos"
+    },
+    "foto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

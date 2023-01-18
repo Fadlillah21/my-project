@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pengembalian_tanggal_pengembalians",
+  "info": {
+    "displayName": "Tanggal_pengembalian",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Pengembalian": {
+      "type": "date",
+      "required": false
+    },
+    "Keterangan": {
+      "type": "text",
+      "required": false
+    }
+  }
+}
